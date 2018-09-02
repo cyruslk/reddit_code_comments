@@ -26,5 +26,11 @@ const streamOpts = {
 const comments = client.CommentStream(streamOpts);
 
 comments.on('comment', (comment) => {
-    console.log(comment.link_title);
+    request(comment.link_permalink, function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        console.log(body);
+        fs.writeFile('./comment.txt', body);
+      }
+    
+    });
 });
