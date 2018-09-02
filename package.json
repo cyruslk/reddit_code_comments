@@ -1,0 +1,18 @@
+{
+  "name": "reddit_code_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "osmosis": "^1.1.8",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.15.2",
+    "website-scraper": "^3.3.6"
+  }
+}
