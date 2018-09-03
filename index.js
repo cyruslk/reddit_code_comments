@@ -26,5 +26,5 @@ const streamOpts = {
 const comments = client.CommentStream(streamOpts);
 
 comments.on('comment', (comment) => {
-    console.log(comment.link_title);
+    console.log(comment.link_permalink);
 });
