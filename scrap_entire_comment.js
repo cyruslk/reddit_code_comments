@@ -10,7 +10,7 @@ var fs = require('fs');
 
 
 const r = new Snoowrap({
-    userAgent: 'reddit-bot-example-node',
+    userAgent: 'cycy_666',
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     username: process.env.REDDIT_USER,
@@ -31,6 +31,6 @@ comments.on('comment', (comment) => {
         console.log(body);
         fs.writeFile('./comment.txt', body);
       }
-    
+
     });
 });

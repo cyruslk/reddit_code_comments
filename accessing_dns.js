@@ -16,6 +16,7 @@ const r = new Snoowrap({
     username: process.env.REDDIT_USER,
     password: process.env.REDDIT_PASS
 });
+
 const client = new Snoostorm(r);
 
 const streamOpts = {
@@ -26,5 +27,7 @@ const streamOpts = {
 const comments = client.CommentStream(streamOpts);
 
 comments.on('comment', (comment) => {
-    console.log(comment);
+    let commentUser = comment.body;
+    let finalString = commentUser.replace(/[^0-9a-z]/gi, '').toLowerCase()
+    console.log(`http://wwww.${finalString}.com`);
 });
