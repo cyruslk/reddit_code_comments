@@ -26,7 +26,5 @@ const streamOpts = {
 const comments = client.CommentStream(streamOpts);
 
 comments.on('comment', (comment) => {
-    // console.log(comment.body_html);
-    console.log(comment);
-
+    console.log(comment.body_html);
 });

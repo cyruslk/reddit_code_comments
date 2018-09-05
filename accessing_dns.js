@@ -29,5 +29,5 @@ const comments = client.CommentStream(streamOpts);
 comments.on('comment', (comment) => {
     let commentUser = comment.body;
     let finalString = commentUser.replace(/[^0-9a-z]/gi, '').toLowerCase()
-    console.log(`http://wwww.${finalString}.com`);
+    console.log(`http://www.${finalString}.com`);
 });
