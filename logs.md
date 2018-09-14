@@ -14,3 +14,4 @@ More specifically:
 - What are my starting points/inspirations for these bots?
 - A theoritical Framework? 
 - Internet > Transparency? | Internet > Opacity?
+  

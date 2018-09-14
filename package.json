@@ -12,6 +12,7 @@
     "cheerio": "^1.0.0-rc.2",
     "curlrequest": "^1.0.1",
     "dotenv": "^6.0.0",
+    "openurl": "^1.1.1",
     "osmosis": "^1.1.8",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
